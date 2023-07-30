@@ -1,0 +1,175 @@
+body {
+  
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.index {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+.imageRadio .numIcon:hover {
+  background: lightgray;
+  content: url("/images/unlocked.png");
+}
+
+.form-check-label {
+  width: 70px;
+}
+
+.form-check-input:checked+.imageRadio {
+  filter: grayscale(100%);
+  background: rgb(77, 122, 176);
+}
+
+.numIcon {
+  background: #7e1441;
+  width: 90px;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 1.5rem;
+  border-radius: 50%;
+  transition: all ease .2s;
+}
+
+.numIcon:hover {
+  background: #fff;
+  color: #7e1441;
+  border: 2px solid #7e1441 ;
+
+}
+.nump {
+  
+  font-size: 1rem;
+}
+.nump:hover{
+  background: #7e1441;
+  color: #fff;
+ 
+
+}
+.form-check-input:checked+p{
+  width: 100px;
+  height: 100px;
+  background: #fff;
+  color: #7e1441;
+  border: 2px solid #7e1441 ;
+}
+.login{
+  background: #7e1441;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.login p{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  line-height: 0.5;
+  max-width: 300px;
+  margin-top: 1rem;
+
+} 
+.login a{
+  color: #fff;
+}
+.login p span{
+  text-decoration: underline;
+}
+ .imgForm{
+  width: 100%;
+  
+  
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.imgForm .img{
+  margin-top: 50px;
+  margin-bottom: 30px;
+  width: 90%;
+  display: flex;
+  
+  align-items: center;
+  justify-content: center;
+}
+.imgForm label{
+  color: #fff;
+}
+.imgForm button{
+  background-color: #fff;
+  color: #7e1441;
+}
+.imgForm button:hover{
+  color: #7e1441;
+}
+.mainForm{
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+}
+.form{
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+  flex-direction: column;
+}
+.form label{
+  font-size: 1.5rem;
+  font-weight: 600;
+
+}
+.form .formBox{
+  max-width: 300px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.form .formBox .button{
+  background: #fff;
+  color: #7e1441;
+  border: 2px solid #7e1441 ;
+margin-bottom: 2rem;
+}
+.index{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+  background-color: #7e1441;
+}
+.index .subBox{
+   background-color: #fff;
+   padding: 25px;
+   color: #7e1441;
+   border-radius: 10px;
+}
+.index .subBox p{
+  font-size: 1rem;
+}
+.logout {
+  background: #fff;
+  color: #7e1441;
+  margin-top: 1rem;
+}

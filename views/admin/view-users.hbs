@@ -1,0 +1,42 @@
+<section>
+    <div class="container">
+        <div class="row mt-4">
+            <a href="/dhdcquranadmindashboard/add-user" class="btn btn-success ml-auto mb-3">Add user</a>
+        </div>
+        <table class="table mt-5" id="usersTable">
+            <thead>
+                <tr>
+                    <th scope="col">No</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Age</th>
+                    <th scope="col">Place</th>
+                    <th scope="col">Institution</th>
+                    <th scope="col">Image</th>
+                </tr>
+            </thead>
+            <tbody>
+                {{#each users}}
+                <tr>
+                    <th>{{this.Number}}</th>
+                    <td>{{this.Name}}</td>
+                    <td>{{this.Age}}</td>
+                    <td>{{this.Place}}</td>
+                    <td>{{this.Institution}}</td>
+                    <td><img src="/images/user-images/{{this._id}}.jpg" alt=""></td>
+                    <td>
+                        <a href="/dhdcquranadmindashboard/edit-user?id={{this._id}}" class="btn btn-primary">Edit</a>
+                        <a href="/dhdcquranadmindashboard/delete-user/{{this._id}}" class="btn btn-danger"
+                            {{#if ../adminData}}onclick="return confirm('Are you want to remove the user {{this.Name}} ?')"{{else}}{{/if}}>Delete</a>
+                    </td>
+                </tr>
+                {{/each}}
+            </tbody>
+        </table>
+    </div>
+    <style>
+        img {
+            width: 50px;
+            height: 50px;
+        }
+    </style>
+</section>
